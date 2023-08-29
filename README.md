@@ -35,7 +35,7 @@ especially for priests or monastics who are bound to pray the Office!**
 ### Planned Tasks
 
 #### Application Platforms
-- [ ] Hosted Progressive Web Application (*in progress*)
+- [x] Hosted Progressive Web Application
 - [ ] Android application
 - [ ] iOS application (big maybe, since it costs a ton of money just to have the tools)
 

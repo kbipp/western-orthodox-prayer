@@ -94,6 +94,7 @@ import MarianAntiphon from "@/components/MarianAntiphon.vue";
           <span class="red">℟.</span> As it was in the beginning, is now and
           ever shall be, world without end. Amen. Alleluia.
         </p>
+        <!-- TODO: dynamically render one or the other when implementing Proper of Seasons -->
         <p class="rubric">
           But from Compline of Saturday before Septuagesima through Compline of
           Wednesday in Holy Week the following is said instead of Alleluia:

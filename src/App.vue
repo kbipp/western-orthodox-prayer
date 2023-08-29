@@ -53,23 +53,22 @@ watch(
       <ion-menu content-id="main-content" type="overlay">
         <ion-content>
           <ion-list id="hours-list">
-            <ion-datetime-button datetime="datetime">
-              <ion-list-header slot="date-target">{{
-                displayDate
-              }}</ion-list-header>
-            </ion-datetime-button>
-            <ion-modal :keep-contents-mounted="true">
-              <ion-datetime
-                id="datetime"
-                presentation="date"
-                :show-default-title="true"
-                :show-default-buttons="true"
-                :show-clear-button="true"
-                @ionChange="changeDate"
-              ></ion-datetime>
-            </ion-modal>
-            <!--            <ion-note>Octave Day of the Assumption</ion-note>-->
-
+            <ion-list-header>
+              <ion-datetime-button datetime="datetime">
+                <ion-label slot="date-target">{{ displayDate }}</ion-label>
+              </ion-datetime-button>
+              <ion-modal :keep-contents-mounted="true">
+                <ion-datetime
+                  id="datetime"
+                  presentation="date"
+                  :show-default-title="true"
+                  :show-default-buttons="true"
+                  :show-clear-button="true"
+                  @ionChange="changeDate"
+                ></ion-datetime>
+              </ion-modal>
+              <!--            <ion-note>Octave Day of the Assumption</ion-note>-->
+            </ion-list-header>
             <ion-menu-toggle
               :auto-hide="false"
               v-for="(page, i) in pages"
