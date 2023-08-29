@@ -1,0 +1,42 @@
+[
+  {
+    "id": "advent",
+    "incipit": "Alma Redemptoris",
+    "antiphon": "GRACIOUS Mother of our Redeemer, forever abiding heaven's gateway, and star of ocean, O succor the people, who, though falling, strive to rise again. Thou Maiden who barest thy holy Creator, to the wonder of all nature; ever Virgin, after, as before thou receivedst that Ave from the mouth of Gabriel; have compassion on us sinners.",
+    "verse": "The Angel of the Lord announced until Mary.",
+    "response": "And she conceived by the Holy Ghost",
+    "collect": "WE beseech thee, O Lord, pour thy grace into our hearts: that, as we have known the incarnation of thy Son Jesus Christ by the message of an Angel, so by his cross and passion we may be brought unto the glory of his resurrection. Through the same Christ our Lord."
+  },
+  {
+    "id": "nativity",
+    "incipit": "Alma Redemptoris",
+    "antiphon": "GRACIOUS Mother of our Redeemer, forever abiding heaven's gateway, and star of ocean, O succor the people, who, though falling, strive to rise again. Thou Maiden who barest thy holy Creator, to the wonder of all nature; ever Virgin, after, as before thou receivedst that Ave from the mouth of Gabriel; have compassion on us sinners.",
+    "verse": "After Childbearing, O Virgin, thou didst remain inviolate.",
+    "response": "Intercede for us, O Mother of God.",
+    "collect": "O GOD, who by the fruitful virginity of blessed Mary hast bestowed upon mankind the reward of eternal salvation: grant, we beseech thee, that we may know the help of her intercession, through whom we have been accounted worthy to receive the Author of our life, Jesus Christ thy Son our Lord."
+  },
+  {
+    "id": "lent",
+    "incipit": "Ave, Regina caelorum",
+    "antiphon": "QUEEN of the heavens, we hail thee; hail thee, Lady of all the Angels; thou the dawn, the door of morning whence the world's true Light is risen: Joy to thee, O Virigin glorious, beautiful beyond all other; Hail, and farewell, O most gracious, intercede for us alway to Jesus.",
+    "verse": "Vouchsafe that I may praise thee, O holy Virigin",
+    "response": "Give me strength against thine enemies",
+    "collect": "GRANT us, O merciful God, protection in our weakness: that we who celebrate the memory of the holy Mother of God may, though the aid of her intercession, rise again from our sins. Through the same Christ our Lord."
+  },
+  {
+    "id": "paschaltide",
+    "incipit": "Regina caeli",
+    "antiphon": "O QUEEN of heaven, be joyful, alleluia; because he whom so meetly thou barest, alleluia, hath arisen, as he promised, alleluia: pray for us to the Father, alleluia.",
+    "verse": "Rejoice and be glad, O Virgin Mary, alleluia.",
+    "response": "For the Lord is risen indeed, alleluia",
+    "collect": "O GOD, who, by the resurrection of thy Son Jesus Christ, didst vouchsafe to give gladness unto the world: grant, we beseech thee, that we, being holpen by the Virgin Mary, his Mother, may attain unto the joys of everlasting life. Through the same Christ our Lord."
+  },
+  {
+    "id": "ordinary",
+    "incipit": "Salve regina",
+    "antiphon": "MARY, we hail thee, Mother and Queen compassionate; Mary our comfort, life, and hope, we hail thee. To thee we exiles, children of Eve, lift our crying. To thee we are sighing, as mournful and weeping, we pass through this vale of sorrow. Turn thou, therefore, O our intercessor, those thine eyes of pity and loving-kindness upon us sinners. Hereafter, when our earthly exile shall be ended, shew us Jesus, the blessed fruit of thy womb. O gentle, O tender, O gracious Virgin Mary.",
+    "verse": "Pray for us, O holy Mother of God.",
+    "response": "That we may be made worthy of the promises of Christ.",
+    "collect": "ALMIGHTY and everlasting God, who by the co-operation of the Holy Ghost, didst prepare the body and soul of the glorious Virgin Mother Mary to become a habitation meet for thy Son: grant that as we rejoice in her commemoration, we may be delivered by her loving intercession from our present evils and from eternal death. Through the same Christ our Lord."
+  }
+]

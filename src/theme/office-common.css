@@ -1,0 +1,17 @@
+div.section {
+    padding-bottom: 1em;
+}
+.red {
+    color: rgba(255, 0, 0, 0.69);
+}
+.rubric {
+    color: rgba(255, 0, 0, 0.69);
+    font-style: italic;
+}
+.first-letter {
+    color: rgba(255, 0, 0, 0.69);
+    font-size: xx-large;
+}
+.incipit {
+    font-style: italic;
+}
