@@ -29,7 +29,7 @@ import MarianAntiphon from "@/components/MarianAntiphon.vue";
         <p><span class="red">℣.</span> O Lord, grant a blessing.</p>
         <p>
           <span class="rubric">Blessing.</span> <span class="red">✠</span> The
-          Lord Almighty grant us a quiet night a perfect end.
+          Lord Almighty grant us a quiet night and a perfect end.
         </p>
         <p><span class="red">℟.</span> Amen.</p>
       </div>
@@ -94,6 +94,11 @@ import MarianAntiphon from "@/components/MarianAntiphon.vue";
           <span class="red">℟.</span> As it was in the beginning, is now and
           ever shall be, world without end. Amen. Alleluia.
         </p>
+        <p class="rubric">
+          But from Compline of Saturday before Septuagesima through Compline of
+          Wednesday in Holy Week the following is said instead of Alleluia:
+        </p>
+        <p>Praise be to thee, O Lord, King of eternal glory.</p>
       </div>
 
       <Psalm id="4" />
@@ -181,6 +186,7 @@ import MarianAntiphon from "@/components/MarianAntiphon.vue";
           help remain with us always.
         </p>
         <p><span class="red">℟.</span> Amen.</p>
+        <p class="rubric">The Our Father and Hail Mary are said silently.</p>
       </div>
     </ion-content>
   </ion-page>
