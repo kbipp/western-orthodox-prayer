@@ -30,18 +30,20 @@ const pages = [
   { title: "Compline (Night Prayer)", name: "compline" },
 ];
 const selectedIndex = ref(pages.findIndex((p) => p.name === route.name));
-const d: any = route.query.d;
-const date = ref(dayjs(d));
+const date = ref(dayjs(route.query.d as string));
 const displayDate = computed(() => date.value.format("dddd MMMM D, YYYY"));
 const isoDate = computed(() => date.value.format("YYYY-MM-DD"));
 
 function changeDate(e: any) {
-  router.push({ name: route.name, query: { d: e.detail.value.split("T")[0] } });
+  router.push({
+    name: route.name as string,
+    query: { d: e.detail.value.split("T")[0] },
+  });
 }
 
 watch(
   () => route.query.d,
-  (newDate: string) => (date.value = dayjs(newDate)),
+  (newDate) => (date.value = dayjs(newDate as string)),
 );
 </script>
 

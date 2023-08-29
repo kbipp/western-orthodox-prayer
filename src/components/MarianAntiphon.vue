@@ -5,13 +5,12 @@ import { useRoute } from "vue-router";
 import dayjs from "dayjs";
 
 const route = useRoute();
-const d: any = route.query.d;
-const date = ref(dayjs(d));
+const date = ref(dayjs(route.query.d as string));
 const marianAntiphon = computed(() => getMarianAntiphon(date.value));
 
 watch(
   () => route.query.d,
-  (newDate: string) => (date.value = dayjs(newDate)),
+  (newDate) => (date.value = dayjs(newDate as string)),
 );
 </script>
 

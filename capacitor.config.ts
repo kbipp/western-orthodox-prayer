@@ -1,8 +1,8 @@
 import { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
-  appId: "io.ionic.starter",
-  appName: "western-orthodox-prayer",
+  appId: "net.kbipp.wop",
+  appName: "Western Orthodox Prayer",
   webDir: "dist",
   server: {
     androidScheme: "https",
