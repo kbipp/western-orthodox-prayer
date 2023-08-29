@@ -1,6 +1,6 @@
 # Western Orthodox Prayer
 This is the repository for the Western Orthodox Prayer web application for praying the traditional Benedictine Divine 
-Office according to the use of the Antiochian Western Rite Vicariate (AWRV) of the Easern Orthodox Catholic Church.
+Office according to the use of the Antiochian Western Rite Vicariate (AWRV) of the Eastern Orthodox Catholic Church.
 
 ## How to build and run
 1. Install [Node.js ](https://nodejs.org/en/download)(the LTS release should be fine, I tested with v19.1.0)

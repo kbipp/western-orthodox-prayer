@@ -1,6 +1,6 @@
 {
   "name": "western-orthodox-prayer",
-  "description": "A web application for praying the traditional Benedictine Divine Office according to the use of the Antiochian Western Rite Vicariate of the Easern Orthodox Catholic Church.",
+  "description": "A web application for praying the traditional Benedictine Divine Office according to the use of the Antiochian Western Rite Vicariate of the Eastern Orthodox Catholic Church.",
   "license": "MIT",
   "private": true,
   "version": "0.0.1",
