@@ -41,7 +41,7 @@ especially for priests or monastics who are bound to pray the Office!**
 
 #### App Features (roughly in order of effort/importance)
 - [x] Date picker
-- [ ] Option to render basic prayers, abbreviate them, or omit them
+- [x] Option to render basic prayers, abbreviate them, or omit them
 - [ ] Hours throughout the year (*in progress*)
   - [x] Compline (outside of Triduum)
   - [ ] Prime
