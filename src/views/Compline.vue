@@ -11,6 +11,10 @@ import {
 import Psalm from "../components/Psalm.vue";
 import Hymn from "../components/Hymn.vue";
 import MarianAntiphon from "@/components/MarianAntiphon.vue";
+import BasicPrayers from "@/components/BasicPrayers.vue";
+import { useSettingStore } from "@/stores/settings";
+
+const settingStore = useSettingStore();
 </script>
 
 <template>
@@ -54,6 +58,10 @@ import MarianAntiphon from "@/components/MarianAntiphon.vue";
         <h6 class="rubric">
           The Our Father is said secretly, followed by the Confiteor:
         </h6>
+        <BasicPrayers
+          :show-creed="false"
+          v-if="settingStore.showBasicPrayers"
+        />
         <p>
           <span class="first-letter">I</span> CONFESS to God Almighty, to
           blessed Mary ever Virgin, to blessed Michael the Archangel, to blessed
@@ -188,6 +196,10 @@ import MarianAntiphon from "@/components/MarianAntiphon.vue";
         </p>
         <p><span class="red">℟.</span> Amen.</p>
         <p class="rubric">The Our Father and Hail Mary are said silently.</p>
+        <BasicPrayers
+          v-if="settingStore.showBasicPrayers"
+          :show-creed="false"
+        />
       </div>
     </ion-content>
   </ion-page>
