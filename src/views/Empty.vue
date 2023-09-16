@@ -21,7 +21,7 @@ import {
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" class="ion-padding">
       <h1>Coming soon!</h1>
     </ion-content>
   </ion-page>

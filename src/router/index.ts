@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "@ionic/vue-router";
 import { RouteRecordRaw } from "vue-router";
 import Compline from "@/views/Compline.vue";
+import Empty from "@/views/Empty.vue";
+import Settings from "@/views/Settings.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -11,43 +13,50 @@ const routes: Array<RouteRecordRaw> = [
     path: "/lauds",
     name: "lauds",
     component: () => import("../views/Empty.vue"),
-    props: true,
+    props: { title: "Lauds", section: "Hours" },
   },
   {
     path: "/prime",
     name: "prime",
-    component: () => import("../views/Empty.vue"),
-    props: true,
+    component: Empty,
+    props: { title: "Prime", section: "Hours" },
   },
   {
     path: "/terce",
     name: "terce",
     component: () => import("../views/Empty.vue"),
-    props: true,
+    props: { title: "Terce", section: "Hours" },
   },
   {
     path: "/sext",
     name: "sext",
     component: () => import("../views/Empty.vue"),
-    props: true,
+    props: { title: "Sext", section: "Hours" },
   },
   {
     path: "/none",
     name: "none",
     component: () => import("../views/Empty.vue"),
-    props: true,
+    props: { title: "None", section: "Hours" },
   },
   {
     path: "/vespers",
     name: "vespers",
     component: () => import("@/views/Empty.vue"),
-    props: true,
+    props: { title: "Vespers", section: "Hours" },
   },
   {
     path: "/compline",
     name: "compline",
     component: Compline,
-    props: true,
+    props: { title: "Compline", section: "Hours" },
+  },
+
+  {
+    path: "/settings",
+    name: "settings",
+    component: Settings,
+    props: { title: "Settings", section: "Other" },
   },
 ];
 

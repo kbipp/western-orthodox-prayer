@@ -5,6 +5,8 @@ import {
   IonMenu,
   IonContent,
   IonList,
+  IonItemGroup,
+  IonItemDivider,
   IonListHeader,
   IonRouterOutlet,
   IonMenuToggle,
@@ -14,21 +16,25 @@ import {
   IonDatetimeButton,
   IonModal,
 } from "@ionic/vue";
-import { computed, ref, watch } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import dayjs from "dayjs";
 
 const route = useRoute();
 const router = useRouter();
-const pages = [
-  { title: "Lauds", name: "lauds" },
-  { title: "Prime (Morning Prayer)", name: "prime" },
-  { title: "Terce", name: "terce" },
-  { title: "Sext", name: "sext" },
-  { title: "None", name: "none" },
-  { title: "Vespers", name: "vespers" },
-  { title: "Compline (Night Prayer)", name: "compline" },
-];
+
+// Sidebar pages
+const pages = router
+  .getRoutes()
+  .filter((r) => r.name)
+  .map((r) => ({
+    name: r.name,
+    title: (r.props.default as any).title,
+    section: (r.props.default as any).section,
+  }));
+const hoursPages = pages.filter((p) => p.section === "Hours");
+const otherPages = pages.filter((p) => p.section === "Other");
+
 const selectedIndex = ref(pages.findIndex((p) => p.name === route.name));
 const date = ref(dayjs(route.query.d as string));
 const displayDate = computed(() => date.value.format("dddd MMMM D, YYYY"));
@@ -45,6 +51,8 @@ watch(
   () => route.query.d,
   (newDate) => (date.value = dayjs(newDate as string)),
 );
+
+onMounted(() => console.log(router.getRoutes()));
 </script>
 
 <template>
@@ -69,25 +77,56 @@ watch(
               </ion-modal>
               <!--            <ion-note>Octave Day of the Assumption</ion-note>-->
             </ion-list-header>
-            <ion-menu-toggle
-              :auto-hide="false"
-              v-for="(page, i) in pages"
-              :key="i"
-            >
-              <ion-item
-                @click="selectedIndex = i"
-                router-direction="root"
-                :router-link="{
-                  name: page.name,
-                  query: { d: isoDate },
-                }"
-                :detail="false"
-                class="hydrated"
-                :class="{ selected: selectedIndex === i }"
+
+            <ion-item-group>
+              <ion-item-divider>
+                <ion-label>Hours</ion-label>
+              </ion-item-divider>
+              <ion-menu-toggle
+                :auto-hide="false"
+                v-for="(page, i) in hoursPages"
+                :key="i"
               >
-                <ion-label>{{ page.title }}</ion-label>
-              </ion-item>
-            </ion-menu-toggle>
+                <ion-item
+                  @click="selectedIndex = i"
+                  router-direction="root"
+                  :router-link="{
+                    name: page.name,
+                    query: { d: isoDate },
+                  }"
+                  :detail="false"
+                  class="hydrated"
+                  :class="{ selected: selectedIndex === i }"
+                >
+                  <ion-label>{{ page.title }}</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            </ion-item-group>
+
+            <ion-item-group>
+              <ion-item-divider>
+                <ion-label>Other</ion-label>
+              </ion-item-divider>
+              <ion-menu-toggle
+                :auto-hide="false"
+                v-for="(page, i) in otherPages"
+                :key="i"
+              >
+                <ion-item
+                  @click="selectedIndex = i"
+                  router-direction="root"
+                  :router-link="{
+                    name: page.name,
+                    query: { d: isoDate },
+                  }"
+                  :detail="false"
+                  class="hydrated"
+                  :class="{ selected: selectedIndex === i }"
+                >
+                  <ion-label>{{ page.title }}</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            </ion-item-group>
           </ion-list>
         </ion-content>
       </ion-menu>
